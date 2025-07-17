@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyCare Calendar 💖</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Welcome Section -->
+  <section id="welcome">
+    <img src="images/pic1.jpg" alt="Welcome Image" id="welcome-img">
+    <h1>Take Care of Yourself First 💖</h1>
+    <button id="start-btn">Let's Plan My Days! 🌸</button>
+  </section>
+
+  <!-- Calendar Section -->
+  <section id="calendar" style="display:none;">
+    <h2>My Personal Calendar 📅</h2>
+    <div id="calendar-body"></div>
+    
+    <div class="calendar-controls">
+      <button id="prev-btn">◀️ Previous Month</button>
+      <button id="next-btn">Next Month ▶️</button>
+    </div>
+
+    <div class="theme-buttons">
+      <button id="theme-btn">Theme 🎨</button>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="script.js"></script>
+</body>
+</html>

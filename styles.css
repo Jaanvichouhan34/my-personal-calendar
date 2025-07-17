@@ -1,0 +1,187 @@
+/* Base Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background 0.5s ease;
+  background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+
+#welcome {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #ffe6f0;
+}
+
+#welcome-img {
+  width: 300px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+#start-btn {
+  padding: 12px 24px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#start-btn:hover {
+  background-color: #ff1493;
+}
+
+#calendar {
+  padding: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff0f5;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.calendar-controls {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.calendar-controls button {
+  padding: 10px 20px;
+  background-color: #ffb6c1;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.calendar-controls button:hover {
+  background-color: #ff69b4;
+  color: white;
+}
+
+.theme-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#theme-btn {
+  padding: 10px 20px;
+  background-color: #ba55d3;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th {
+  background-color: #ffb6c1;
+  padding: 10px;
+  text-align: center;
+}
+
+td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #ffd6e0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.calendar-day:hover {
+  background-color: #ffe4e1;
+  transform: scale(1.05);
+}
+
+/* Animations */
+.heart {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background-color: pink;
+  pointer-events: none;
+  animation: floatUp 6s linear forwards;
+  border-radius: 50%;
+  opacity: 0.7;
+  z-index: 1000;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-100vh) translateX(50px);
+    opacity: 0;
+  }
+}
+
+/* Themes */
+.theme-blue {
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+}
+
+.theme-green {
+  background: linear-gradient(to right, #d4fc79, #96e6a1);
+}
+
+.theme-purple {
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+}
+
+/* Enhance calendar visibility per theme */
+.theme-blue #calendar,
+.theme-green #calendar,
+.theme-purple #calendar {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+}
+
+.theme-blue th,
+.theme-blue td {
+  background-color: #d0e8ff;
+}
+
+.theme-green th,
+.theme-green td {
+  background-color: #e0ffd4;
+}
+
+.theme-purple th,
+.theme-purple td {
+  background-color: #f5e1ff;
+}
+
+/* Optional: Add contrast to text/buttons */
+.theme-blue button,
+.theme-green button,
+.theme-purple button {
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.theme-blue button:hover,
+.theme-green button:hover,
+.theme-purple button:hover {
+  background-color: white;
+  color: #000;
+}
+
+.theme-blue, .theme-green, .theme-purple {
+  color: #333;
+}
