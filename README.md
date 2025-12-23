@@ -3,8 +3,8 @@
 A simple, interactive personal calendar built using **HTML**, **CSS**, and **JavaScript**. This project is designed to help individuals (especially women) stay organized and manage their monthly tasks or events more effectively.  
 It features a clean UI, theme toggle (light/dark), and a dynamic calendar with previous and next month navigation.
 
-🔗 **Live Demo:** [my-personal-calendar.vercel.app](https://my-personal-calendar.vercel.app)  
-📦 **GitHub Repo:** [github.com/Jaanvichouhan34/my-personal-calendar](https://github.com/Jaanvichouhan34/my-personal-calendar)
+🔗 **Live Demo:** [Click here](https://my-personal-calendar.vercel.app)  
+📦 **GitHub Repo:** [Click here](https://github.com/Jaanvichouhan34/my-personal-calendar)
 
 ---
 
